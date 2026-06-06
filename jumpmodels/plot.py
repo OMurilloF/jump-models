@@ -32,8 +32,7 @@ def matplotlib_setting():
     plt.rcParams['font.size'] = 26
     plt.rcParams['font.family'] = 'cmr10'
     plt.rcParams['axes.formatter.use_mathtext'] = True
-    plt.rcParams['text.usetex'] = True
-    plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
+    plt.rcParams['text.usetex'] = False
     plt.rcParams["savefig.dpi"] = 300
     plt.rcParams["savefig.bbox"] = "tight"
     return 
