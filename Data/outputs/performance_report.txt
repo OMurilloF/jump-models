@@ -1,0 +1,121 @@
+======================================================================
+STRATEGY BACKTEST REPORT
+Period: 2010-04-01 to 2026-06-05
+Config: lambda=25  equity_min=50%  equity_max=80%  yc_bonds=True  ma_filter=False
+======================================================================
+
+1. OVERALL PERFORMANCE
+----------------------------------------
+
+  Strategy
+    CAGR           : 5.7%
+    Volatility     : 11.4%
+    Sharpe Ratio   : 0.50
+    Max Drawdown   : -30.4%
+    Calmar Ratio   : 0.19
+    Cumulative Ret : 126.6%
+    Monthly Win %  : 63%
+    Excess Return  : -3.5%
+    Tracking Error : 6.7%
+    Info Ratio     : -0.52
+    Beta vs AOA    : 0.72
+    Correlation    : 0.88
+
+  AOA (Benchmark)
+    CAGR           : 9.2%
+    Volatility     : 14.0%
+    Sharpe Ratio   : 0.66
+    Max Drawdown   : -29.6%
+    Calmar Ratio   : 0.31
+    Cumulative Ret : 276.3%
+    Monthly Win %  : 67%
+
+  --- IS / OOS Split ---
+
+  IS (2010-2019)
+    Strategy: CAGR=6.2%  Vol=10.3%  Sharpe=0.60  MaxDD=-14.4%  Excess=-2.6%
+    AOA:      CAGR=8.7%  Vol=12.9%  Sharpe=0.68  MaxDD=-21.3%
+
+  OOS(2020-2025)
+    Strategy: CAGR=4.7%  Vol=13.1%  Sharpe=0.36  MaxDD=-30.4%  Excess=-4.7%
+    AOA:      CAGR=9.4%  Vol=15.5%  Sharpe=0.60  MaxDD=-29.6%
+
+
+2. TOP DRAWDOWNS (Strategy)
+----------------------------------------
+  Start        Trough       End             Depth  Days to Trough   Recovery
+  ----------------------------------------------------------------------
+  2020-02-24   2020-03-23   2021-04-05     -30.4%              28d        378d
+  2022-02-10   2022-09-30   2024-02-22     -16.3%             232d        510d
+  2018-02-05   2018-12-24   2019-12-13     -14.4%             322d        354d
+  2015-07-21   2015-08-25   2016-06-08     -13.0%              35d        288d
+  2011-08-02   2011-08-08   2011-11-08     -12.5%               6d         92d
+  2010-05-04   2010-06-07   2010-09-14     -11.3%              34d         99d
+  2011-11-09   2011-11-25   2012-01-03     -10.4%              16d         39d
+  2013-05-31   2013-06-24   2013-08-02      -9.7%              24d         39d
+
+
+3. ANNUAL RETURNS
+----------------------------------------
+  Year     Strategy        AOA     Excess   p_bear
+  ----------------------------------------------
+  2010         8.5%      10.4%       -1.9%    0.417
+  2011         2.9%      -1.7%       +4.6%    0.283
+  2012        12.5%      14.0%       -1.5%    0.083
+  2013        10.9%      20.2%       -9.3%    0.000
+  2014         1.6%       5.8%       -4.2%    0.000
+  2015        -5.5%      -1.1%       -4.4%    0.258
+  2016         8.0%       7.1%       +0.8%    0.167
+  2017        15.8%      18.3%       -2.4%    0.000
+  2018        -6.8%      -8.2%       +1.4%    0.417
+  2019        12.2%      20.4%       -8.1%    0.238
+  2020        -4.5%      12.1%      -16.6%    0.583
+  2021         9.7%      14.3%       -4.7%    0.004
+  2022        -8.3%     -17.7%       +9.4%    0.821
+  2023         6.9%      16.8%       -9.9%    0.250
+  2024         6.7%      12.7%       -6.1%    0.000
+  2025        17.7%      17.9%       -0.2%    0.167
+
+
+4. REGIME-CONDITIONAL PERFORMANCE (Strategy)
+----------------------------------------
+  Regime                          Months   Time   AnnRet     Vol   Sharpe
+  -------------------------------------------------------------------
+  Bull (p_bear < 0.25)               150   77%     13.3%     7.1%     1.87
+  Bear (p_bear >= 0.50)               44   23%    -19.9%    12.0%    -1.66
+
+
+5. SLEEVE ATTRIBUTION (annualised contribution)
+----------------------------------------
+  Total strategy return (ann)  : +5.73%
+  Equity sleeve contribution   : +6.08%
+  Bond sleeve contribution     : +1.79%
+  Cash (BIL) contribution      : +0.23%
+  [Note: sum may differ from total due to scaling/residuals]
+
+  Avg monthly equity allocation: 69.5%
+  Avg monthly bonds allocation : 18.9%
+  Avg monthly cash allocation  : 10.9%
+
+
+6. RISK METRICS
+----------------------------------------
+  5 Worst Months (Strategy):
+    2020-03: -13.6%  (AOA: -12.6%)
+    2018-10: -6.8%  (AOA: -6.5%)
+    2020-02: -6.4%  (AOA: -6.3%)
+    2010-05: -6.3%  (AOA: -8.7%)
+    2015-08: -6.1%  (AOA: -5.6%)
+  5 Best Months (Strategy):
+    2020-11: +6.6%  (AOA: +9.2%)
+    2013-09: +4.8%  (AOA: +4.2%)
+    2026-01: +4.8%  (AOA: +2.5%)
+    2018-01: +4.8%  (AOA: +4.1%)
+    2022-11: +4.7%  (AOA: +7.1%)
+
+  Return skewness: -1.14  (positive = right tail favourable)
+  Excess kurtosis: +3.17  (fat tails if > 0)
+
+======================================================================
+END OF REPORT
+======================================================================
